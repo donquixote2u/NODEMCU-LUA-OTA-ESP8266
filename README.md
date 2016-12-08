@@ -1,8 +1,14 @@
-# ESPLoader v2
+# ESPLoader v3
 
-I was really inspired by Robo Durden and his nice work - ESPLoader - https://github.com/RoboDurden/ESPLoad
-however it was not really suitable for my purposes so I modified it a lot and the result is my new version of ESPLoader which got some fancy functionalities including web management (php + mysql)
-Please understand that I'm not the coder, so that's why some parts may looks strange, but finally it works quite well :)
+This is a cut-down version of the ESP8266 OTA system extended by Lukas Koval 
+https://github.com/kovi44/NODEMCU-LUA-OTA-ESP8266
+from a basic core by Roland Durden  - https://github.com/RoboDurden/ESPLoad
+
+I have removed the initial config using the ESP8266 as a server, and the relevant lua code from the ESP8266 manifest; so my version requires
+the s.txt config file [[[[[resident on the ESP8266 to be initialise correctly when loaded onto the ESP8266.
+
+The following documentation is  retained verbatim from Rolands version, but steps1-3 are no longer used; instead, edit s.txt appropriately.
+
 
 ![alt tag](https://raw.githubusercontent.com/kovi44/NODEMCU-LUA-OTA-ESP8266/master/screenshots/gui_edit.png)
 
