@@ -1,4 +1,4 @@
-# ESPLoader v3
+# ESPLoader v3 -  INCOMPLETE - IN DEVELOPMENT 10/12/16!
 
 This is a cut-down version of the ESP8266 OTA system extended by Lukas Koval 
 https://github.com/kovi44/NODEMCU-LUA-OTA-ESP8266
