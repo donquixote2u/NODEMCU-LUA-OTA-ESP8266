@@ -7,7 +7,7 @@ from a basic core by Roland Durden  - https://github.com/RoboDurden/ESPLoad
 I have removed his initial config using the ESP8266 as a server, and the relevant lua code from the ESP8266 manifest; so my version requires
 the s.txt config file resident on the ESP8266 to be initialise correctly when loaded onto the ESP8266.
 
-The following documentation is  retained verbatim from Rolands version, but steps1-3 are no longer used; instead, edit s.txt appropriately.
+The following documentation is  retained pretty much verbatim from Rolands version, apart from ESP8266 init steps which are no longer used; instead, edit s.txt appropriately.
 
 
 ![alt tag](https://raw.githubusercontent.com/kovi44/NODEMCU-LUA-OTA-ESP8266/master/screenshots/gui_edit.png)
@@ -16,19 +16,16 @@ The following documentation is  retained verbatim from Rolands version, but step
 The main goal was to update ESP8266 with nodemcu firmware easily using my server.
 Basic description how it works:
 
-0. Save all necessary files to ESP  
-1. Enter all required fields such as essid, password, host, domain, path and update interval (minutes) in file s.txt.
+0. Enter all required fields such as essid, password, host, domain, path and update interval (minutes) in file s.txt.
+1. Save all necessary files to ESP  
 4. ESP will boot , find the config as s.txt load all variables and find that no scripts were downloaded yet, so it start the client to download it from server
 5. client script will be run. it will connect to server, get the list of files to be downloaded and then download each of them, compile
 6. After succesfull download the esp will restart and start the downloaded script and also check periodically for new update.
 
 How to install it:
 Using ESPlorer or another tool upload init.lua, client.lua and s.txt to the esp
-You should configure a webserver and create there a folder /esp/ and copy all files from folder WebUI_MNG to that folder. Import sql database to your mysql server (folder sql, filename: esp.sql). Edit config.php and insert your db credentials.
+You should configure a webserver and create there a folder /esp/ and copy all files from folder WebUI to that folder. Import sql database to your mysql server (folder sql, filename: esp.sql). Edit config.php and insert your db credentials.
 If everything is OK you should be able to access management UI http://ip_of_your_server/esp/ There one can find a sample configuration. 
-
-As soon as your webserver is ready. Power on the esp8266. During the first boot process the ESP will show in console its chipid - please copy that. 
-Configure the parameters via web gui and that's it. web GUI is accessible via http://192.168.4.1
 
 parametrs are stored in s.txt and it includes
 
