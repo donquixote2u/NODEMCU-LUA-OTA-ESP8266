@@ -5,7 +5,7 @@ body {
 }
 .btn-file {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .btn-file input[type=file] {
     position: absolute;
@@ -13,10 +13,10 @@ body {
     right: 0;
     min-width: 100%;
     min-height: 100%;
-    font-size: 100px;
+   font-size: 100px; 
     text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
+    filter: alpha(opacity=0);  
+    opacity: 0; 
     outline: none;
     background: white;
     cursor: inherit;

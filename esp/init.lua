@@ -71,6 +71,4 @@ if (s.host~="") then
     else    
         dofile("client.lua")   
     end
-else
-    dofile("server.lua")   
 end 

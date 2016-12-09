@@ -64,9 +64,7 @@ function dwn()
                 conn = nil
                 file.close()
                 ext = string.sub(v, -3)
-                if (ext == "lua") then
-                    node.compile(filename)
-                end
+                -- removed 10/12/16 if (ext == "lua") then node.compile(filename)  end
                 dwn()
 
             end)
@@ -127,7 +125,7 @@ function FileList(sck,c)
                 file.close()
                 ext = string.sub(v, -3)
                 if (ext == "lua") then
-                    node.compile(v)
+                    -- removed 10/12/16 node.compile(v)
                 end
                 dwn()
             end)

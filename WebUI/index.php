@@ -208,7 +208,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
                         <div class='input-group'>
                             <span class='input-group-btn'>
                                 <span class='btn btn-primary btn-file'>
-                                Browse&hellip; 
+                                Browse&hellip;   
                                 <input id='file' type='file' name='files[]' multiple/>
                                 </span>
                             </span>
@@ -313,8 +313,8 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
               <div class='col-md-4'>
                 
                 <label class='btn-sm btn-primary'>
-                Browse… <input id='file' style='display: none;' type='file' class='input-file' name='files[]'' multiple/>
-                </label>
+                Browse… <input id='file' style='display: none;' type='file' class='input-file' name='files[]'' multiple/> 
+                 </label>
               </div>
             </div>";
 
